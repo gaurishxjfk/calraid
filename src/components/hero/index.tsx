@@ -1,0 +1,40 @@
+import { useEffect, useState } from "react";
+import ImageSlider from "./ImageSlider";
+import TextSlider from "./TextSlider";
+import sliderData from "../../data/SliderData.json";
+
+export interface textContentProp {
+  title: string;
+  desc: string;
+  id: number;
+}
+
+const Hero = () => {
+  console.log(sliderData);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentImg, setCurrentImg] = useState<number>(0);
+  const [currentText, setCurrentText] = useState<textContentProp>({
+    title: "",
+    desc: "",
+    id: 0,
+  });
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % sliderData.length);
+    }, 9000); // Change slide every 3 seconds
+
+    setCurrentImg(sliderData[currentSlide].id);
+    setCurrentText(sliderData[currentSlide]);
+    return () => clearTimeout(timer);
+  }, [currentSlide, currentText]);
+  console.log(currentText, "na ");
+  return (
+    <div className="relative mt-12">
+      <ImageSlider currentImg={currentImg} />
+      <TextSlider currentText={currentText} />
+    </div>
+  );
+};
+
+export default Hero;

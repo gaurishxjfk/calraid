@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Customized Plans",
+    "list": [
+      "Consult to corporate",
+      "Consult to restaurants",
+      "Nutrition Partner at fitness events",
+      "Consultant to gyms, academies, clubs"
+    ],
+    "id": 1
+  },
+  {
+    "title": "Professional Seminars",
+    "list": [
+      "Consult to corporate",
+      "Consult to restaurants",
+      "Nutrition Partner at fitness events",
+      "Consultant to gyms, academies, clubs"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Corporate Consultation",
+    "list": [
+      "Consult to corporate",
+      "Consult to restaurants",
+      "Nutrition Partner at fitness events",
+      "Consultant to gyms, academies, clubs"
+    ],
+    "id": 3
+  }
+]

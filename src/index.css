@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.encode-sans-semi-condensed-thin {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-extralight {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-light {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-regular {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-medium {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-semibold {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-bold {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-extrabold {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .encode-sans-semi-condensed-black {
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .shadowInner{
+    box-shadow: inset 0 0 5px rgb(211, 211, 211);
+  }
+
+  .shadowOuter{
+    box-shadow:  0 0 5px rgb(175, 175, 175);
+  }
+
+  .bg-backfeoung-image{
+    background: url('/public/overlayBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
