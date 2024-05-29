@@ -1,0 +1,166 @@
+{
+    "sections": [
+      {
+        "id": "general_fitness",
+        "title": "General Fitness",
+        "description": "Nutrition is important for fitness enthusiasts leading an active lifestyle as well as recreational athletes who spend a great deal of energy and time into fitness activities or sports. Inadequate nutrition among fitness freaks could also lead to severe health complications and nutrient deficiencies. Experts at CalRaid guide you over the right energy and nutrient intake required to achieve optimal results and performance without compromising on your health.",
+        "benefits": [
+          "Latest nutritionally sound trending diets under professional supervision",
+          "Periodic monitoring and improvement in body composition",
+          "Peak performance at fitness activities and sports",
+          "Good energy levels and increased fitness"
+        ],
+        "expectations": [
+          "Workout Nutrition",
+          "Rest Day Nutrition",
+          "Supplement consultations",
+          "Sport/Activity based menu designing and logistics"
+        ]
+      },
+      {
+        "id": "holistic_nutrition",
+        "title": "Holistic Nutrition",
+        "description": "Make health a priority not an afterthought. Holistic Nutrition plans at CalRaid aim to educate individuals on the importance of eating healthy in day-to-day living and meal choices with regards to sustainability and balances we need to practise for our planet and future generations. Your Nutrition coach guides you through setting health goals and achieving them, to be the best version of yourself.",
+        "benefits": [
+          "Healthy eating habits via Flexitarian diets",
+          "Mindfulness of eating",
+          "Sustainable diets",
+          "Good Physical and Mental health"
+        ],
+        "expectations": [
+          "Menu Planning",
+          "Food diary monitoring",
+          "Recipe innovations",
+          "Interpretation of biochemical markers"
+        ]
+      },
+      {
+        "id": "sports_nutrition",
+        "title": "Sports Nutrition",
+        "description": "Athletes have increased energy requirements due to their level of activity through the day and number of training hours. We at CalRaid, skillfully help our athletes eat scientifically to help them excel in their sport. Young athletes are at a risk of compromised growth in case their energy requirements are not met adequately. Our expertise can help guide the route through your food to your medal!",
+        "benefits": [
+          "Eating well for physical activity and sport can have many benefits including:",
+          "Allowing you to perform well in your chosen sport or activity",
+          "Reducing the risk of injury and illness",
+          "Ensuring the best recovery after exercise or a training program"
+        ],
+        "expectations": [
+          "Training Plans",
+          "Competition Plans",
+          "Supplement consultations",
+          "Hydration strategies",
+          "Genetics-based nutrition",
+          "Travel Plans (for away games)"
+        ]
+      },
+      {
+        "id": "kids_nutrition",
+        "title": "Kids Nutrition",
+        "description": "Childhood is an important time to learn about food and eating, so that kids get into the habit of consuming a healthy, varied diet, enjoyed with the rest of the family. However, for parents and caregivers it can be hard to know exactly what toddlers should be eating and in what amounts. At CalRaid, we deliver fun yet educational ways of introducing and influencing healthy eating to your kid.",
+        "benefits": [
+          "Eating well from an early age would be beneficial for:",
+          "Developing healthy eating habits",
+          "Help nourish picky eaters to get their required nutrients and calories",
+          "Promoting normal growth amongst kids",
+          "Avoid early onset of lifestyle disorders"
+        ],
+        "expectations": [
+          "Nutrients and minerals as per Recommended Dietary Allowances & guidelines",
+          "Innovative recipes",
+          "Growth Chart monitoring",
+          "Kid friendly menus with variations"
+        ]
+      },
+      {
+        "id": "pregnancy_nutrition",
+        "title": "Pregnancy Nutrition",
+        "description": "Pregnant women can improve their health by maintaining a healthy weight through diet. Right from trying for a baby to preparing for the birth, nutrition plays a vital role to help control symptoms during pregnancy, maintain a healthy weight and have a safe conception. At CalRaid you would be guided with a well-balanced nutrition program that gives you a variety of nutrients required at different stages of pregnancy.",
+        "benefits": [
+          "Diet containing multivitamins and minerals of importance during various stages in pregnancy",
+          "Control over symptoms during pregnancy",
+          "Helps avoid and control medical conditions during pregnancy",
+          "Monitor trimester-wise weight gained during pregnancy"
+        ],
+        "expectations": [
+          "Meal plans suited to food cravings",
+          "Nutrient packed meals",
+          "Personalised monitoring and follow ups",
+          "Food diary monitoring"
+        ]
+      },
+      {
+        "id": "weight_management",
+        "title": "Weight Management",
+        "description": "Eating right does not mean eating less. Weight loss and healthy weight management is a struggle without proper guidance and most often we end up sacrificing foods that we love only to overindulge at a later stage. CalRaid’s Nutrition coaches monitor your meal intake and help you feel fuller, fitter and lighter without feeling hungry.",
+        "benefits": [
+          "Good hair, skin, nails",
+          "No hunger pangs",
+          "Satiety with meals",
+          "Retards or Controls metabolic syndrome",
+          "Better Hormone function",
+          "Healthy weight for height"
+        ],
+        "expectations": [
+          "Interpretation of Biochemical markers",
+          "Customised Nutrition Charts",
+          "Food diary monitoring",
+          "One-on-One consultation (Skype/ Call)",
+          "Genetic Testing*"
+        ]
+      },
+      {
+        "id": "medical_care",
+        "title": "Medical Care",
+        "description": "Food could either be the purest form of nourishment or the most potent form of toxin. The choice is ours. A large percentage of chronic lifestyle disorders as well as acute illness depend significantly on the food we eat. Medical Nutrition Management of various health conditions is an imperative part of the treatment process. Management of chronic diseases requires a specific and scientific nutrition approach. At CalRaid, our experts in Clinical practice have achieved precision nutrition for management of the same.",
+        "benefits": [
+          "Help control or manage medical conditions while preventing malnutrition",
+          "Retard or delay disease progression",
+          "Reduce dependency on pharmacological drugs"
+        ],
+        "expectations": [
+          "Symptom Management",
+          "Monitoring Biochemical markers",
+          "Supplement Plan",
+          "Condition Specific Therapeutic Diet",
+          "Periodic Monitoring"
+        ]
+      },
+      {
+        "id": "rehabilitation_nutrition",
+        "title": "Rehabilitation Nutrition",
+        "description": "Proper nutrition during rehabilitation from illness, major surgery, sports injury or post-operative home care is essential for several reasons, including, faster healing and recovery, improved immunity and symptom management, enhanced energy and improved quality of life. We at CalRaid, skillfully help our clients with customised nutrition services tailored to your specific requirements. Our team of experienced dietitians work closely with you to develop a comprehensive nutrition plan that supports your recovery goals and help get you back stronger than ever!",
+        "benefits": [
+          "Rehabilitation nutrition has several benefits including:",
+          "Facilitating faster healing and recovery",
+          "Reducing the risk of post-operative infections and supports your immune function",
+          "Symptom management as well as management of common side-effects of intense medical treatments such as radiation, chemotherapy, dialysis etc."
+        ],
+        "expectations": [
+          "Comprehensive Nutrition Assessment",
+          "Customised Nutrition Plans",
+          "Supplement guidance",
+          "On-going Monitoring of progress",
+          "Nutrition Education for improved Quality of Life"
+        ]
+      },
+      {
+        "id": "special_diets",
+        "title": "Special Diets",
+        "description": "Dietary restrictions and food allergies can present unique challenges in achieving optimal nutrition. With growing awareness regarding planetary diets, veganism, flexitarianism, and sustainable diets as well as diagnosis of lactose, gluten intolerance, or other specific food allergies and intolerances, many individuals struggle in adapting to these exclusions and could find it to be a very confusing and frustrating experience. Our experienced dietitians are dedicated to help ease this transition for you and develop personalised solutions tailored to your individual needs. We at CalRaid, skillfully help our clients meet their energy and nutrient requirements, despite the dietary restrictions, to maintain optimal health. Our expertise can help support and educate you on this new adaptive journey, making the transition seamless!",
+        "benefits": [
+          "Eating adapted to your special diets has benefits including:",
+          "Allowing you to achieve your target calories and macronutrient balance",
+          "Lowering the risk of developing micronutrient deficiencies linked to food elimination",
+          "Ensuring optimal health and wellbeing despite dietary restrictions"
+        ],
+        "expectations": [
+          "Comprehensive Symptom and Nutrition assessment",
+          "Tailored Nutrition Plans",
+          "Recipe development and cooking guidance",
+          "Supplement guidance",
+          "Nutrition education for special diets including allergen-free, intolerances, and other adaptive fasting regimes."
+        ]
+      }
+    ]
+  }
+  

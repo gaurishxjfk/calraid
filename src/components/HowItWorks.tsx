@@ -17,7 +17,7 @@ const setpsArr = [
     id: 3,
     title: "Pick A Plan",
     icon: "pick_a_plan",
-    desc: "You pick a plan --🡪 Begin processing the payment for the same -🡪 Lock down an appointment slot --🡪 Transaction Confirmation",
+    desc: "You pick a plan 🡪 Begin processing the payment for the same 🡪 Lock down an appointment slot 🡪 Transaction Confirmation",
   },
   {
     id: 4,

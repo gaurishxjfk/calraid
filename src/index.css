@@ -70,3 +70,41 @@
     background-size: cover;
   }
   
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .slide.active {
+    transform: scale(1.1);
+    
+  }
+
+  .animate-slide {
+    animation: 5000s slide linear infinite;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-900%);
+    }
+  }

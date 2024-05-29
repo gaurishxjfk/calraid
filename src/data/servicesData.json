@@ -1,31 +1,33 @@
 [
   {
-    "title": "Customized Plans",
+    "title": "Professional Collaborations",
     "list": [
-      "Consult to corporate",
-      "Consult to restaurants",
+      "Consultant to corporates",
+      "Consultant to restaurants",
       "Nutrition Partner at fitness events",
       "Consultant to gyms, academies, clubs"
     ],
     "id": 1
   },
   {
-    "title": "Professional Seminars",
+    "title": "Nutrition Education",
     "list": [
-      "Consult to corporate",
-      "Consult to restaurants",
-      "Nutrition Partner at fitness events",
-      "Consultant to gyms, academies, clubs"
+      "Nutrition coaching for sports teams",
+      "Corporate Seminars",
+      "School Campus Seminars",
+      "Nutrition Workshops",
+      "Nutrition Speaker"
     ],
     "id": 2
   },
   {
-    "title": "Corporate Consultation",
+    "title": "Customised Nutrition Plans",
     "list": [
-      "Consult to corporate",
-      "Consult to restaurants",
-      "Nutrition Partner at fitness events",
-      "Consultant to gyms, academies, clubs"
+      "One-on-One diet consultation",
+      "Customised menu planning",
+      "Personalised monitoring",
+      "Biochemical health marker analysis",
+      "Genetics-based nutrition"
     ],
     "id": 3
   }

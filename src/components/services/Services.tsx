@@ -10,7 +10,7 @@ const Services = () => {
             Services
           </h1>
           <p className="text-[20px] text-[#5C5C5C] tracking-wider">
-            Calraid hosts several services related to health and nutrition.
+            CalRaid hosts several services related to health and nutrition.
             Associations aren’t limited to individuals but available to groups
             as well for a wider outreach and awareness regarding health &
             nutrition

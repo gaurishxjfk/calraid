@@ -1,0 +1,83 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Mr. Gurmeet Singh Chahal",
+      "profession": "Footballer (Goalkeeper -Indian Football Team)",
+      "location": "Haryana",
+      "serviceOffered": "Sports Nutrition",
+      "feedback": "Top class sports dietician, she helped me with her guidance to take my performance to another level."
+    },
+    {
+      "id": 2,
+      "name": "Ms. Anvika Dash",
+      "profession": "Swimmer (National Level -Gold medalist)",
+      "location": "Indore",
+      "serviceOffered": "Sports Nutrition",
+      "feedback": "It was a wonderful experience being a client of CalRaid Nutrition. This experience has given me almost everything that I was unable to achieve on my own. From the last three months, my medals and accolades and continued progress in the pool and my personal best timings, I have achieved with their constant support and guidance always."
+    },
+    {
+      "id": 3,
+      "name": "Ms. Gwen Figueredo",
+      "profession": "Entrepreneur",
+      "location": "Goa",
+      "serviceOffered": "Weight Management",
+      "feedback": "When I met Luana she listened all my complaints. She then asked me to do a list of tests and also chalked out a diet plan that was not restrictive and didn’t make me miss my favourite foods. Over time she tweaked it after taking into account the blood tests and genetic tests. The diet coupled with moderate exercise has resulted in my dropping my weight from 14 kgs over a span of 7-8 months. I still have a way to go but Luana's guidance has made me eat healthier, feel healthier and work harder to have a better way of Life. She does reprimand you for not eating right but in a very calm manner that makes you want to try harder to do better. I do recommend her for anyone who wants a healthier lifestyle."
+    },
+    {
+      "id": 4,
+      "name": "Shameek Vas",
+      "profession": "Footballer (FC Goa -Development Squad)",
+      "location": "Goa",
+      "serviceOffered": "Sports Nutrition",
+      "feedback": "Luana is the best Dietitian for sports nutrition. I consulted her and Shefali during my budding phase of my professional career as a footballer and my experience with them has been very enlightening and rewarding. My performance and recovery along with other concerns on eating right and sufficient calories for my weight and muscle gain have all improved since working with Luana. I look forward to a continued relationship with CalRaid Nutrition Clinic and a long road ahead along my profession journey. Definitely recommend her services for any athlete and otherwise."
+    },
+    {
+      "id": 5,
+      "name": "Mr. Marc Coelho",
+      "profession": "Service",
+      "location": "Mumbai",
+      "serviceOffered": "Medical Care",
+      "feedback": "Never before had I ever consulted a professional to really figure out how to eat right. This is my first and definitely not my last. Luana and Shefali have been absolutely amazing, be it with follow-ups on diets and eating habits or checking in on just a sense of being- mental and physical. As someone who has challenges on both fronts, I can say for a fact that CalRaid is the best in the business. There’s no turning away once you’re with them, they get you addicted to 'being the best version of you on every front, with of course food being at the forefront'."
+    },
+    {
+      "id": 6,
+      "name": "Mr. Sahil Tavora",
+      "profession": "Footballer (Hyderabad FC, ISL)",
+      "location": "Goa",
+      "serviceOffered": "Sports Nutrition",
+      "feedback": "I first met Luana, approximately 7 years ago, a year before I signed my first professional football contract at the age of 17. She was instrumental in really educating me about the importance of nutrition and meal planning at a very young age, not just for enhancing performance on the pitch but also for maintaining great overall health. I don't know how she did it, but it always seemed like she was only a phone call or a message away whenever I had nutrition related doubts, even during non working hours. I can't thank her enough for her expertise and for continuing to be with me on this journey as a professional sportsman."
+    },
+    {
+      "id": 7,
+      "name": "Felipe Alvares",
+      "profession": "Entrepreneur & Personal Trainer",
+      "location": "Goa",
+      "serviceOffered": "Muscle Gain",
+      "feedback": "A planned diet and exercise go hand in hand if you want to live a healthy life. So when I decided to turn things around I knew the exercise and reached out to Luana for help with my nutrition. Must say it’s a decision I will never regret as she worked closely with me in monitoring my progress and making sure I achieved my goals. She is someone I would highly recommend. A great nutritionist!!!"
+    },
+    {
+      "id": 8,
+      "name": "Mrs. Karishma Jethmalani",
+      "profession": "Psychologist",
+      "location": "Mumbai",
+      "serviceOffered": "Weight Management & Muscle Gain",
+      "feedback": "I have had the privilege of working with Luana both as a colleague and as my personal dietician, and I can confidently say that she is an exemplary professional in her field. Luana's dedication and resourcefulness are truly commendable. She genuinely listens to your needs and considerations. She will consistently follow up on your progress. Her extensive knowledge in the field of nutrition is evident in her guidance. I wholeheartedly recommend Luana for anyone seeking expert dietary advice and support."
+    },
+    {
+      "id": 9,
+      "name": "Mr. Lino Sequeira",
+      "profession": "Sports Physiotherapist",
+      "location": "Canada",
+      "serviceOffered": "Nutrition Consultation",
+      "feedback": "As a sports Physiotherapist, I understand the importance of good nutrition to aid your body to full fitness and recovery from injuries along with rigorous workout schedules. I highly recommend Luana as she has a customised approach towards sports nutrition. She handcrafts specific nutrition programs to help athletes achieve peak performance. She is approachable and understands her client’s needs. She mentors and facilitates you to achieve the best results."
+    },
+    {
+      "id": 10,
+      "name": "Mrs. Sharon Noronha",
+      "location": "Dubai",
+      "serviceOffered": "Weight Management",
+      "feedback": "Luana is very professional and tailors your diet plan as per your routine. She provides excellent tips on helping you to lead a healthy lifestyle. With quick responses to everything including recipes when I requested them to maintain my plan. CalRaid is highly recommended!"
+    }
+  ]
+}
