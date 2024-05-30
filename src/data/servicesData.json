@@ -7,7 +7,13 @@
       "Nutrition Partner at fitness events",
       "Consultant to gyms, academies, clubs"
     ],
-    "id": 1
+    "id": 1,
+    "desc": "CalRaid provides a range of services across various health related domains. Nutrition Consultants work with partners to deliver ",
+    "descItems": [
+      "Nutrition expertise to design healthy food menus at various restaurants",
+      "Cafeterias’ set up at various corporate and clubs, gym cafes, in –house academies",
+      "Meals planned at fitness events, body composition analysis and nutrition services at various fitness events and corporate events "
+    ]
   },
   {
     "title": "Nutrition Education",
@@ -18,7 +24,14 @@
       "Nutrition Workshops",
       "Nutrition Speaker"
     ],
-    "id": 2
+    "id": 2,
+    "desc": "Nutrition Coaching involves designing and conducting Nutrition workshops and Nutrition seminars on various trending health related topics at various venues. ",
+    "descItems": [
+      "Sports Nutrition seminars to educate athletes on the importance of Nutrition ",
+      "Corporate seminars that emphasise, the importance of eating right and prevention of lifestyle disorders ",
+      "Lectures at colleges and school campuses to educate budding minds on Health and Nutrition",
+      "Lectures at scientific programs on nutrition interventions in various medical conditions"
+    ]
   },
   {
     "title": "Customised Nutrition Plans",
@@ -29,6 +42,13 @@
       "Biochemical health marker analysis",
       "Genetics-based nutrition"
     ],
-    "id": 3
+    "id": 3,
+    "desc": "Customised Nutrition Chart Planning and One-on-One diet consults are a game changer in educating and inculcating healthy eating practices among individuals. Our expertise oversees the entire process including ",
+    "descItems": [
+      "Customised menu planning",
+      "Personalised monitoring",
+      "Biochemical health markers analysis",
+      "Genetics-based nutrition"
+    ]
   }
 ]
