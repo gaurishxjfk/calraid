@@ -77,14 +77,14 @@ const ServicesCard = ({
   return (
     <>
       <div
-        className="mt-12 px-2 mx-auto rounded-[10px] relative bg-gradient-to-b from-[#ebebeb] to-[#f8f8f8]  w-[18rem] shadowInner pb-8 hover:scale-110  transition-all ease-in-out duration-500 cursor-pointer"
+        className="mt-12 px-2 mx-auto rounded-[10px] servicecard relative hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] hover:shadow-[#75917b4f] bg-gradient-to-b from-[#ebebeb] to-[#f8f8f8]  w-[18rem] shadowInner pb-8 hover:scale-110  transition-all ease-in-out duration-500 cursor-pointer"
         onClick={() => setActiveCard(id)}
       >
         <div className="absolute -top-7 inset-x-0 mx-auto !z-40 bg-white w-16 h-16 rounded-full ">
           <img
             src={`/offer_${id}.png`}
             alt="CardEl"
-            className="absolute top-2 inset-x-0 mx-auto !z-50"
+            className="absolute top-2 inset-x-0 mx-auto !z-50 rotate360 transition-all ease-in-out duration-500"
           />
         </div>
         <img

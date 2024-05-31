@@ -13,14 +13,14 @@ const ServiceModal = ({
 }) => {
   return (
     <div
-      className="absolute rounded-md bottom-40 inset-x-0 w-[90%] md:w-[90%] lg:w-[60%] mx-auto
+      className="absolute rounded-md top-40 inset-x-0 w-[98%] md:w-[90%] lg:w-[80%] mx-auto pb-8
                  border-2 border-slate-300 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] p-4 bg-[#e2e2e2] z-50 bg-opacity-50 backdrop-blur-md bg-clip-padding backdrop-filter"
     >
       <button
         className={`absolute right-5 top-5 font-semibold text-xl text-[#75917B]`}
         onClick={() => setActiveCard(null)}
       >
-        X
+        <Cross />
       </button>
       <div className="mt-6">
         <div className="mx-auto flex items-center justify-center bg-white w-14 h-14 rounded-full ">
@@ -42,6 +42,15 @@ const ServiceModal = ({
             ))}
         </ul>
       </div>
+    </div>
+  );
+};
+
+const Cross = () => {
+  return (
+    <div className="relative group">
+      <div className="border-2 border-[#75917B] group-hover:border-[#37473a] h-6 rounded-full rotate-45 absolute"></div>
+      <div className="border-2 border-[#75917B] group-hover:border-[#37473a] h-6 rounded-full -rotate-45 "></div>
     </div>
   );
 };

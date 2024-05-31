@@ -6,11 +6,48 @@ import {
   PhoneIcon,
 } from "lucide-react";
 
+const menusItems = [
+  "Home",
+  "About Us",
+  "Services",
+  "Plans",
+  "Blogs",
+  "Contact Us",
+];
+
 const Footer = () => {
   return (
-    <footer className="w-full h-[20rem] bg-[#ececec] rounded-t-3xl -mt-5 pt-12 text-center flex relative justify-stretch flex-col sm:flex-row">
-      <div className="flex flex-col gap-2 items-center  mx-auto text-[#272727]">
-        <p className="text-xl font-bold">CONTACT US</p>
+    <footer className="w-full pb-4 md:pb-16 bg-[#ececec] rounded-t-3xl -mt-5 pt-12 text-left flex relative justify-stretch flex-wrap gap-4">
+      <div className="lg:w-1/4 px-6">
+        <h1 className="text-xl font-bold">About Us</h1>
+        <p>
+          CalRaid is a global healthcare clinic serving in the interest of
+          nutrition and health management. It is not a diagnostic centre or a
+          brand promoter outlet.
+          <br />
+          <span>
+            <a href="/" className="underline">
+              Read More...
+            </a>
+          </span>
+        </p>
+      </div>
+      <div className="lg:w-1/4 px-6">
+        <h1 className="text-xl font-bold">Quick Links</h1>
+        <ul className="flex flex-wrap gap-2 lg:flex-col">
+          {menusItems.map((i) => (
+            <a
+              className={`text-md underline hover:text-[#75917B]`}
+              href={"/"}
+              key={i}
+            >
+              {i}
+            </a>
+          ))}
+        </ul>
+      </div>
+      <div className="lg:w-1/4 flex flex-col gap-2 px-6  text-[#272727] overflow-hidden">
+        <p className="text-xl font-bold">Contact Us</p>
         <div className="flex flex-col gap-2 ">
           <p className="flex gap-2">
             <span>
@@ -27,26 +64,41 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 items-center  mx-auto text-[#272727] mt-4 sm:mt-0">
+      <div className="lg:w-1/4 flex flex-col gap-2 text-[#272727] mt-4 sm:mt-0 px-6">
         <p className="text-xl font-bold">Socials</p>
         <div className="flex gap-4 items-center">
-          <p className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer">
+          <a
+            href="https://www.facebook.com/profile.php?id=61559935402224"
+            target="_blank"
+            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer"
+          >
             <Facebook stroke="#a7a7a7" />
-          </p>
-          <p className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer">
+          </a>
+          <a
+            href="https://www.instagram.com/calraidnutritionclinic/"
+            target="_blank"
+            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer"
+          >
             <InstagramIcon stroke="#a7a7a7" />{" "}
-          </p>
-          <p className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luana-mascarenhas-3043819b/"
+            target="_blank"
+            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer"
+          >
             <LinkedinIcon stroke="#a7a7a7" />{" "}
-          </p>
+          </a>
         </div>
       </div>
 
-      <p className="absolute inset-x-0 bottom-4">
-        © Copyright 2024{" "}
-        <span className="text-[#f7941d]">Calraid Nutrition</span> | Developed by
+      <p className="md:absolute inset-x-0 bottom-4 text-center w-full mt-12">
+        © 2019–2024 <span className="text-[#f7941d]">Calraid Nutrition</span>{" "}
+        All Rights Reserved. Developed by
         <span className="text-[#f7941d]">
-          <a href="https://gaurish.vercel.app/"> Gaurish</a>
+          <a href="https://gaurish.vercel.app/" target="_blank">
+            {" "}
+            Gaurish
+          </a>
         </span>
       </p>
     </footer>

@@ -108,3 +108,10 @@
       transform: translateX(-900%);
     }
   }
+
+
+ 
+  
+  .servicecard:hover .rotate360 {
+    transform: rotate(360deg);
+  }

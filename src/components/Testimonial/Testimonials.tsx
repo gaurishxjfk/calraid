@@ -31,10 +31,10 @@ const Testimonials = () => {
   return (
     <section className="w-full py-[3rem] pb-[8rem] bg-[#75917B]">
       <div className="text-center px-4 ">
-        <h3 className="text-[28px] md:text-[42px] encode-sans-semi-condensed-semibold flex justify-center gap-2 items-center text-white tracking-wide">
+        <h3 className="text-[24px] sm:text-[28px] md:text-[42px] encode-sans-semi-condensed-semibold flex justify-center gap-2 items-center text-white tracking-wide">
           Calraid's Hall Of Fame{" "}
           <span>
-            <img src="/sparkles.svg" alt="" className="h-12" />
+            <img src="/sparkles.svg" alt="" className="h-6 md:h-12" />
           </span>
         </h3>
         <section className="slider-container overflow-hidden mt-12">
