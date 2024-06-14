@@ -10,7 +10,6 @@ export interface textContentProp {
 }
 
 const Hero = () => {
-  console.log(sliderData);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentImg, setCurrentImg] = useState<number>(0);
   const [currentText, setCurrentText] = useState<textContentProp>({
@@ -28,7 +27,6 @@ const Hero = () => {
     setCurrentText(sliderData[currentSlide]);
     return () => clearTimeout(timer);
   }, [currentSlide, currentText]);
-  console.log(currentText, "na ");
   return (
     <div className="relative mt-12">
       <ImageSlider currentImg={currentImg} />

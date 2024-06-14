@@ -10,7 +10,11 @@ export default {
         'lg': '992px',
       }
     },
-    extend: {},
+    extend: {
+      colors: {
+        main: '#75917B'
+      }
+    },
   },
   plugins: [],
 }

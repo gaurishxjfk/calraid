@@ -84,7 +84,7 @@ const PlansSlider: React.FC<SliderProps> = () => {
   );
 };
 
-const PlanCard = ({
+export const PlanCard = ({
   centerID,
   name,
   desc,

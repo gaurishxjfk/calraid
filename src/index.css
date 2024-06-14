@@ -65,7 +65,7 @@
   }
 
   .bg-backfeoung-image{
-    background: url('/public/overlayBg.png');
+    background: url('/overlayBg.png');
     background-repeat: no-repeat;
     background-size: cover;
   }

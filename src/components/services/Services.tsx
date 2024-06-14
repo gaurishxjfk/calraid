@@ -97,8 +97,8 @@ const ServicesCard = ({
           {title}
         </div>
         <ul className="text-[18px] mt-4 flex flex-col gap-2 text-[#6D6D6D] encode-sans-semi-condensed-medium ">
-          {list.map((item) => (
-            <li className=" text-center" key={item.length}>
+          {list.map((item,j) => (
+            <li className=" text-center" key={j}>
               {item}
             </li>
           ))}

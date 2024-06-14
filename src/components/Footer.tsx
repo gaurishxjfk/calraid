@@ -5,6 +5,8 @@ import {
   MailIcon,
   PhoneIcon,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { getPaths } from "./navbar/Navbar";
 
 const menusItems = [
   "Home",
@@ -17,7 +19,8 @@ const menusItems = [
 
 const Footer = () => {
   return (
-    <footer className="w-full pb-4 md:pb-16 bg-[#ececec] rounded-t-3xl -mt-5 pt-12 text-left flex relative justify-stretch flex-wrap gap-4">
+    <footer className="w-full pb-4 md:pb-16 bg-[#ececec] relative rounded-t-3xl -mt-5 pt-12 text-left flex justify-stretch flex-wrap lg:flex-nowrap gap-4">
+
       <div className="lg:w-1/4 px-6">
         <h1 className="text-xl font-bold">About Us</h1>
         <p>
@@ -36,13 +39,13 @@ const Footer = () => {
         <h1 className="text-xl font-bold">Quick Links</h1>
         <ul className="flex flex-wrap gap-2 lg:flex-col">
           {menusItems.map((i) => (
-            <a
+            <Link
               className={`text-md underline hover:text-[#75917B]`}
-              href={"/"}
+              to={getPaths(i)}
               key={i}
             >
               {i}
-            </a>
+            </Link>
           ))}
         </ul>
       </div>

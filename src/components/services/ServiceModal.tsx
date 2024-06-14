@@ -46,7 +46,7 @@ const ServiceModal = ({
   );
 };
 
-const Cross = () => {
+export const Cross = () => {
   return (
     <div className="relative group">
       <div className="border-2 border-[#75917B] group-hover:border-[#37473a] h-6 rounded-full rotate-45 absolute"></div>

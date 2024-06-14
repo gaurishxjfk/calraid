@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
+import { getPaths } from "../navbar/Navbar";
+
 const menuArr = ["About Us", "Services", "Testimonials"];
 const SubHero = () => {
   return (
     <div className="mx-12 mt-10 encode-sans-semi-condensed-regular hiddegn md:block px-4">
       <div className="flex justify-between mb-2">
         {menuArr.map((i) => (
-          <a
-            href="/"
-            key={i}
+          <Link
             className="text-lg encode-sans-semi-condensed-medium"
+            to={getPaths(i)}
+            key={i}
           >
             {i}
-          </a>
+          </Link>
         ))}
       </div>
       <p className="mb-2 line-clamp-3 md:line-clamp-none">
@@ -21,9 +24,9 @@ const SubHero = () => {
         calories within our pantry and kitchen which are empty and unnecessary
         for our body and end up causing more harm than good.
       </p>
-      <a href="/" className="underline">
+      <Link to="/about-us" className="underline">
         Read More...
-      </a>
+      </Link>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CalraidLogo from "/logo.png";
 
 import HambergerMenu from "./HambergerMenu";
+import { Link, useLocation } from "react-router-dom";
 
 const menusItems = [
   "Home",
@@ -12,7 +13,12 @@ const menusItems = [
   "Contact Us",
 ];
 
+export function getPaths(path: string) {
+  return path === "Home" ? "/" : "/" + path.replace(" ", "-").toLowerCase();
+}
+
 const Navbar = () => {
+  const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -31,6 +37,10 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <nav
@@ -51,9 +61,9 @@ const Navbar = () => {
         >
           <div className="w-4 h-4 bg-[#75917B] absolute -top-2 left-4 rotate-45"></div>
           {menusItems.map((i) => (
-            <a className={`text-md`} href={"/"} key={i}>
+            <Link className={`text-md`} to={getPaths(i)} key={i}>
               {i}
-            </a>
+            </Link>
           ))}
         </div>
         <div
