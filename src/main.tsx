@@ -109,6 +109,14 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           }
         />
         <Route
+          path="/plans/:id"
+          element={
+            <Layout>
+              <Plans />
+            </Layout>
+          }
+        />
+        <Route
           path="/blogs"
           element={
             <Layout>

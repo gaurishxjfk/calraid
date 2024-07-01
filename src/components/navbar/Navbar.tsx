@@ -13,10 +13,18 @@ const menusItems = [
   "Contact Us",
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function getPaths(path: string) {
   return path === "Home" ? "/" : "/" + path.replace(" ", "-").toLowerCase();
 }
 
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 const Navbar = () => {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
@@ -61,7 +69,7 @@ const Navbar = () => {
         >
           <div className="w-4 h-4 bg-[#75917B] absolute -top-2 left-4 rotate-45"></div>
           {menusItems.map((i) => (
-            <Link className={`text-md`} to={getPaths(i)} key={i}>
+            <Link onClick={scrollToTop} className={`text-md`} to={getPaths(i)} key={i}>
               {i}
             </Link>
           ))}

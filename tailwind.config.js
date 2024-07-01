@@ -12,7 +12,8 @@ export default {
     },
     extend: {
       colors: {
-        main: '#75917B'
+        main: '#75917B',
+        sec: '#ceae99'
       }
     },
   },

@@ -37,8 +37,8 @@ const BlogList: React.FC = () => {
         className="h-[20vh] bg-cover bg-center bg-backfeoung-image_blog text-center relative"
       >
         <div className="h-[20vh] flex flex-col pt-16 bg-gradient-to-b from-[#75917bd3] to-[#75917b48]">
-          <h3 className="text-[24px] md:text-[36px] font-bold text-white ">
-            Calraid Blogs
+          <h3 className="text-[24px] md:text-[36px] font-bold text-white playwrite-us-trad-bold">
+            CalRaid Blogs
           </h3>
         </div>
       </div>

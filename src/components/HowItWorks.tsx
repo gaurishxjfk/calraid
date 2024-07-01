@@ -46,15 +46,15 @@ const HowItWorks = () => {
   return (
     <section className="bg-cover bg-center bg-backfeoung-image  w-full  p-4 py-8 md:py-12">
       <div className="text-center md:px-24 lg:px-40  ">
-        <h3 className="text-[28px] md:text-[42px] encode-sans-semi-condensed-bold text-[#75917B] tracking-wide">
+        <h3 className="text-[28px] md:text-[42px] playwrite-us-trad-regular text-[#ffffff] tracking-wide">
           How It Works
         </h3>
-        <p className=" mt-2 text-white  md:w-[70%]  text-[16px] mx-auto ">
-          <span className="font-bold text-[20px] md:text-[24px]">
+        <p className=" mt-2 text-white encode-sans-semi-condensed-regular md:w-[70%]  text-[16px] mx-auto ">
+          <span className="encode-sans-semi-condensed-semibold text-[20px] md:text-[24px]">
             Freedom, Flexibility and Choice
           </span>
           <br />
-          Calraid has a customer–first approach and hassle free sign-up process
+          CalRaid has a customer–first approach and hassle free sign-up process
           where we value your needs and provide the best service in an efficient
           manner.
         </p>

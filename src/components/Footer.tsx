@@ -18,9 +18,14 @@ const menusItems = [
 ];
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <footer className="w-full pb-4 md:pb-16 bg-[#ececec] relative rounded-t-3xl -mt-5 pt-12 text-left flex justify-stretch flex-wrap lg:flex-nowrap gap-4">
-
+    <footer className="w-full pb-4 md:pb-16 bg-gradient-to-b from-[#e7d0c0] via-[#ebd1c1d3] to-[#f1dbccd3] relative rounded-t-3xl  pt-12 text-left flex justify-stretch flex-wrap lg:flex-nowrap gap-4">
       <div className="lg:w-1/4 px-6">
         <h1 className="text-xl font-bold">About Us</h1>
         <p>
@@ -42,6 +47,7 @@ const Footer = () => {
             <Link
               className={`text-md underline hover:text-[#75917B]`}
               to={getPaths(i)}
+              onClick={() => scrollToTop()}
               key={i}
             >
               {i}
@@ -54,13 +60,13 @@ const Footer = () => {
         <div className="flex flex-col gap-2 ">
           <p className="flex gap-2">
             <span>
-              <PhoneIcon fill="#f7941d" stroke="#ececec" />
-            </span>{" "}
+              <PhoneIcon fill="#f7941d" stroke="#e7d0c0" />
+            </span>
             +91 9765 371 831
           </p>
           <p className="flex gap-2">
             <span>
-              <MailIcon fill="#f7941d" stroke="#ececec" />
+              <MailIcon fill="#f7941d" stroke="#e7d0c0" />
             </span>
             calraidnutritionclinic@gmail.com
           </p>
@@ -73,21 +79,21 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/profile.php?id=61559935402224"
             target="_blank"
-            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer"
+            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#ffffff] cursor-pointer"
           >
             <Facebook stroke="#a7a7a7" />
           </a>
           <a
             href="https://www.instagram.com/calraidnutritionclinic/"
             target="_blank"
-            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer"
+            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#ffffff] cursor-pointer"
           >
             <InstagramIcon stroke="#a7a7a7" />{" "}
           </a>
           <a
             href="https://www.linkedin.com/in/luana-mascarenhas-3043819b/"
             target="_blank"
-            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#dddddd] cursor-pointer"
+            className="flex gap-2 p-1 border border-[#a7a7a7] rounded-lg hover:bg-[#ffffff] cursor-pointer"
           >
             <LinkedinIcon stroke="#a7a7a7" />{" "}
           </a>
@@ -95,11 +101,10 @@ const Footer = () => {
       </div>
 
       <p className="md:absolute inset-x-0 bottom-4 text-center w-full mt-12">
-        © 2019–2024 <span className="text-[#f7941d]">Calraid Nutrition</span>{" "}
+        © 2019–2024 <span className="text-[#f7941d]">CalRaid Nutrition</span>{" "}
         All Rights Reserved. Developed by
         <span className="text-[#f7941d]">
           <a href="https://gaurish.vercel.app/" target="_blank">
-            {" "}
             Gaurish
           </a>
         </span>

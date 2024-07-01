@@ -24,9 +24,9 @@ const Services = () => {
 
   return (
     <section>
-      <div className="flex flex-col-reverse md:flex-row md:mx-8 lg:w-[65%] lg:mx-auto justify-between items-center mt-24">
+      <div className="flex flex-col-reverse md:flex-row md:mx-8 lg:w-[65%] lg:mx-auto justify-around items-center mt-24">
         <div className="w-[90%] lg:w-[45%] text-center md:text-left">
-          <h1 className="text-[42px] encode-sans-semi-condensed-medium text-[#75917B] tracking-wide">
+          <h1 className="text-[46px] md:text-[66px] style-script-regular playwrite-us-trad-regular text-[#75917B] tracking-wide">
             Services
           </h1>
           <p className="text-[20px] text-[#5C5C5C] tracking-wider">
@@ -36,7 +36,7 @@ const Services = () => {
             nutrition
           </p>
         </div>
-        <img src="./serviceImg.png" alt="serviceImg" className="lg:w-[30%]" />
+        <img src="./serviceImg3.png" alt="serviceImg" className="w-[30%] rounded-md " />
       </div>
 
       <div className="flex relative flex-wrap w-[90%] lg:w-[75%] mx-auto justify-between  mb-24">
@@ -77,7 +77,7 @@ const ServicesCard = ({
   return (
     <>
       <div
-        className="mt-12 px-2 mx-auto rounded-[10px] servicecard relative hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] hover:shadow-[#75917b4f] bg-gradient-to-b from-[#ebebeb] to-[#f8f8f8]  w-[18rem] shadowInner pb-8 hover:scale-110  transition-all ease-in-out duration-500 cursor-pointer"
+        className="mt-12 px-2 mx-auto rounded-[10px] servicecard relative hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] hover:shadow-[#75917b4f] bg-gradient-to-b from-[#ffe6d5] to-[#ffe6d5]  w-[18rem] shadowInner pb-8 hover:scale-110  transition-all ease-in-out duration-500 cursor-pointer"
         onClick={() => setActiveCard(id)}
       >
         <div className="absolute -top-7 inset-x-0 mx-auto !z-40 bg-white w-16 h-16 rounded-full ">
@@ -93,12 +93,12 @@ const ServicesCard = ({
           className="absolute top-0 inset-x-0 mx-auto !z-30"
         />
 
-        <div className="encode-sans-semi-condensed-bold text-[#75917B] mt-14 text-center text-2xl tracking-wide">
+        <div className="playwrite-us-trad-regular text-[#75917B] mt-14 text-center text-2xl tracking-wide">
           {title}
         </div>
         <ul className="text-[18px] mt-4 flex flex-col gap-2 text-[#6D6D6D] encode-sans-semi-condensed-medium ">
           {list.map((item,j) => (
-            <li className=" text-center" key={j}>
+            <li className=" text-center " key={j}>
               {item}
             </li>
           ))}

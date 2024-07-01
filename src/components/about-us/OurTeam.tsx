@@ -1,12 +1,12 @@
 const OurTeam = () => {
   return (
     <div className="bg-main py-3">
-      <h1 className="text-[24px] md:text-[34px] encode-sans-semi-condensed-bold tracking-wide text-white">
+      <h1 className="text-[24px] md:text-[44px]  style-script-regular tracking-wide text-white">
         Meet Our Team
       </h1>
-      <div className="mt-12 flex flex-col items-center lg:flex-row lg:justify-evenly lg:gap-12 w-full lg:px-12">
+      <div className="mt-8 md:mt-0 flex flex-col items-center lg:flex-row lg:justify-evenly lg:gap-12 w-full lg:px-12">
         <div className="lg:d">
-          <div className="bg-[#c2dbc7] h-fit w-[17rem] sm:w-[20rem] p-2 mx-auto  rounded-lg border border-[#214928]">
+          <div className="bg-[#ceae99] h-fit w-[17rem] sm:w-[20rem] p-2 mx-auto  rounded-lg border border-[#214928]">
             <div className="-mt-4 -ml-4 border border-[#214928] rounded-lg relative">
               <img
                 src="/dietition1.png"
@@ -30,7 +30,7 @@ const OurTeam = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#c2dbc7] text-slate-600 h-fit mx-auto rounded-lg border border-[#214928] p-2 w-[95%]  mt-4 lg:mt-0 ">
+        <div className="bg-[#ceae99] text-slate-600 h-fit mx-auto rounded-lg border border-[#214928] p-2 w-[95%]  mt-4 lg:mt-0 ">
           <div className="bg-white border border-[#214928]  shadow-inner rounded-lg text-[16px] -ml-4 -mt-4 p-3">
             <p>
               Luana Mascarenhas, a passionate and dynamic Dietitian hailing from
@@ -80,7 +80,7 @@ const OurTeam = () => {
       </div>
 
       <div className="mt-12 flex flex-col-reverse items-center lg:flex-row lg:justify-evenly lg:gap-12 w-full lg:px-12">
-        <div className="bg-[#c2dbc7] h-fit mx-auto rounded-lg border border-[#214928] p-2 w-[95%]  mt-4 lg:mt-0 ">
+        <div className="bg-[#ceae99] h-fit mx-auto rounded-lg border border-[#214928] p-2 w-[95%]  mt-4 lg:mt-0 ">
           <div className="bg-white border border-[#214928] text-slate-600 shadow-inner rounded-lg text-[16px] -ml-4 -mt-4 p-3">
             <p>
               Shefali is a native of Goa with a deep-seated passion for
@@ -111,7 +111,7 @@ const OurTeam = () => {
           </div>
         </div>
         <div className="lg:d">
-          <div className="bg-[#c2dbc7] h-fit w-[17rem] sm:w-[20rem] p-2 mx-auto  rounded-lg border border-[#214928]">
+          <div className="bg-[#ceae99] h-fit w-[17rem] sm:w-[20rem] p-2 mx-auto  rounded-lg border border-[#214928]">
             <div className="-mt-4 -ml-4 border border-[#214928] rounded-lg relative">
               <img
                 src="/dietition2.png"

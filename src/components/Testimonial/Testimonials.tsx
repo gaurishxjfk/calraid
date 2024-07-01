@@ -11,7 +11,7 @@ const Testimonials = () => {
     cssEase: "linear",
     slidesToShow: 3,
     slidesToScroll: 1,
-    
+
     responsive: [
       {
         breakpoint: 1110,
@@ -31,11 +31,11 @@ const Testimonials = () => {
   return (
     <section className="w-full py-[3rem] pb-[8rem] bg-[#75917B]">
       <div className="text-center px-4 ">
-        <h3 className="text-[24px] sm:text-[28px] md:text-[42px] encode-sans-semi-condensed-semibold flex justify-center gap-2 items-center text-white tracking-wide">
-          Calraid's Hall Of Fame{" "}
-          <span>
+        <h3 className="text-[20px] sm:text-[28px] md:text-[42px] playwrite-us-trad-regular flex justify-center gap-2 items-center text-white tracking-wide">
+          CalRaid's Hall Of Fame
+          
             <img src="/sparkles.svg" alt="" className="h-6 md:h-12" />
-          </span>
+          
         </h3>
         <section className="slider-container overflow-hidden mt-12">
           <Slider {...settings}>
@@ -81,10 +81,11 @@ const TestimonialsCard = ({
           <img src="/star.svg" alt="" className="h-6" key={i} />
         ))}
       </div>
-      <div>
+      <div className="w-full">
         <h1 className="text-[20px] font-bold">{name}</h1>
         <h3 className="text-[18px] ">
-          {profession}, {location}
+          {profession && profession?.length > 0 ? profession + "," : ""}{" "}
+          {location}
         </h3>
       </div>
     </div>

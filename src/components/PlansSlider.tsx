@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import PlansData from "../data/PlansData.json";
+import PlanModal from "./plans/PlanModal";
+import { useNavigate } from "react-router-dom";
 
 interface SliderProps {}
 
@@ -7,6 +9,25 @@ const PlansSlider: React.FC<SliderProps> = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [transition, setTransition] = useState("transform 0.5s ease");
+
+  const myElementRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+
+  const [activePlanId, setActivePlanId] = useState<null | string>(null);
+
+  const handleClick = (id: string) => {
+    setActivePlanId(id);
+    navigate(`/plans/${id}`);
+  };
+
+  useEffect(() => {
+    if (activePlanId && activePlanId?.length > 0 && myElementRef.current) {
+      myElementRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [activePlanId]);
 
   const updateSlidesToShow = () => {
     const width = window.innerWidth;
@@ -44,9 +65,14 @@ const PlansSlider: React.FC<SliderProps> = () => {
       setCurrentIndex(0);
     }
   };
-
   return (
     <section className="w-full md:w-[95%] lg:w-[80%] mx-auto -mt-24 overflow-x-hidden pt-8">
+      {activePlanId && (
+        <PlanModal
+          id={activePlanId}
+          setActivePlanId={setActivePlanId}
+        />
+      )}
       <div
         className="slider"
         style={{
@@ -76,6 +102,7 @@ const PlansSlider: React.FC<SliderProps> = () => {
               name={i.title}
               id={i.id}
               desc={i.description}
+              handleClick={handleClick}
             />
           </div>
         ))}
@@ -89,21 +116,23 @@ export const PlanCard = ({
   name,
   desc,
   id,
+  handleClick,
 }: {
   centerID: number;
   name: string;
   desc: string;
   id: string;
+  handleClick: (id: string) => void;
 }) => {
   return (
     <div
-      className={`p-2  bg-white w-[17rem] mx-auto  drop-shadow-xl mb-20 ${
+      className={`p-2  bg-white w-[17rem] mx-auto  drop-shadow-xl mb-20 rounded-md ${
         centerID === 10 &&
         "scale-110 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] shadow-[#75917b7c]"
       }`}
     >
-      <div className="relative text-center flex justify-center">
-        <img src={`/${id}.jpg`} alt="plan 4" className={``} />
+      <div className="relative text-center flex justify-center rounded-md">
+        <img src={`/${id}.jpg`} alt="plan 4" className={`rounded-md`} />
         <div
           className={`absolute rounded-full bg-white p-1 -bottom-[15%] scale-90 drop-shadow-md`}
         >
@@ -111,20 +140,21 @@ export const PlanCard = ({
         </div>
       </div>
       <div className="text-center mt-8">
-        <h5
-          className={`encode-sans-semi-condensed-bold text-[#75917B] text-[24px] my-1`}
-        >
+        <h5 className={`oleo-script-regular text-[#75917B] text-[24px] `}>
           {name}
         </h5>
         <p
-          className={`encode-sans-semi-condensed-regulari text-[16px] my-1 line-clamp-4 ${
+          className={`encode-sans-semi-condensed-regular text-[16px]  line-clamp-4 ${
             centerID === 10 &&
-            "text-[18px] encode-sans-semi-condensed-mediumi scale-95"
+            "text-[18px] encode-sans-semi-condensed-mediu scale-95"
           }`}
         >
           {desc}
         </p>
-        <button className="my-1 bg-[#75917B] px-3 py-1 text-white">
+        <button
+          className="my-1 bg-[#75917B] px-3 py-1 text-white rounded-md"
+          onClick={() => handleClick(id)}
+        >
           Read More...
         </button>
       </div>
