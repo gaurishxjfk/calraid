@@ -144,10 +144,10 @@ export const PlanCard = ({
           {name}
         </h5>
         <p
-          className={`encode-sans-semi-condensed-regular text-[16px]  line-clamp-4 ${
+          className={`italic text-gray-600 text-[16px]  line-clamp-4 ${
             centerID === 10 &&
-            "text-[18px] encode-sans-semi-condensed-mediu scale-95"
-          }`}
+            "text-[18px] not-italic scale-95"
+          }  `}
         >
           {desc}
         </p>

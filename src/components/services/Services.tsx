@@ -36,7 +36,7 @@ const Services = () => {
             nutrition
           </p>
         </div>
-        <img src="./serviceImg3.png" alt="serviceImg" className="w-[30%] rounded-md " />
+        <img src="./serviceImg3.png" alt="serviceImg" className="md:w-[30%] rounded-md " />
       </div>
 
       <div className="flex relative flex-wrap w-[90%] lg:w-[75%] mx-auto justify-between  mb-24">

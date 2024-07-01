@@ -67,7 +67,7 @@ const Plans = () => {
                 {i.title}
               </h5>
               <p
-                className={`encode-sans-semi-condensed-regular my-1 line-clamp-4 text-[18px] text-gray-700
+                className={`italic my-1 line-clamp-4 text-[18px] text-gray-700
               `}
               >
                 {i.description}

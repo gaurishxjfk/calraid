@@ -34,9 +34,13 @@ const Footer = () => {
           brand promoter outlet.
           <br />
           <span>
-            <a href="/" className="underline">
-              Read More...
-            </a>
+          <Link
+              className={`text-md underline hover:text-[#75917B]`}
+              to={'/about-us'}
+              onClick={() => scrollToTop()}
+            >
+              Read More..
+            </Link>
           </span>
         </p>
       </div>
@@ -101,11 +105,11 @@ const Footer = () => {
       </div>
 
       <p className="md:absolute inset-x-0 bottom-4 text-center w-full mt-12">
-        © 2019–2024 <span className="text-[#f7941d]">CalRaid Nutrition</span>{" "}
+        © 2019–2024 <span className="text-[#da8a2a]">CalRaid Nutrition</span>{" "}
         All Rights Reserved. Developed by
-        <span className="text-[#f7941d]">
-          <a href="https://gaurish.vercel.app/" target="_blank">
-            Gaurish
+        <span className="text-[#da8a2a]">{" "} 
+          <a href="https://gaurish.vercel.app/" target="_blank" className="drop-shadow underline">
+           Gaurish
           </a>
         </span>
       </p>

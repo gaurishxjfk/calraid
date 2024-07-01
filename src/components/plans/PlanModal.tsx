@@ -34,7 +34,7 @@ const PlanModal = ({
       <div
         className={`absolute rounded-md top-[20vh] inset-x-0 w-[98%] md:w-[90%] !lg:w-[80%] mx-auto pb-8
                  border-2 border-slate-300 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] p-4 bg-[#fff4ed]
-                 z-50 bg-opacity-70 backdrop-blur-lg bg-clip-padding backdrop-filter  `}
+                 z-50 bg-opacity-70 backdrop-blur-lg bg-clip-padding backdrop-filter  backdrop-brightness-150`}
       >
         <button
           className={`absolute right-5 top-3 cursor-pointer `}
