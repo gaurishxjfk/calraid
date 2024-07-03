@@ -7,6 +7,7 @@ export interface textContentProp {
   title: string;
   desc: string;
   id: number;
+  link: string
 }
 
 const Hero = () => {
@@ -16,6 +17,7 @@ const Hero = () => {
     title: "",
     desc: "",
     id: 0,
+    link: "/"
   });
 
   useEffect(() => {

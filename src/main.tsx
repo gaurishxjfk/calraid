@@ -101,6 +101,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           }
         />
         <Route
+          path="/services/:id"
+          element={
+            <Layout>
+              <Services />
+              <Testimonials />
+            </Layout>
+          }
+        />
+        <Route
           path="/plans"
           element={
             <Layout>

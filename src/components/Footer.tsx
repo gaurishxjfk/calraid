@@ -25,7 +25,7 @@ const Footer = () => {
     });
   };
   return (
-    <footer className="w-full pb-4 md:pb-16 bg-gradient-to-b from-[#e7d0c0] via-[#ebd1c1d3] to-[#f1dbccd3] relative rounded-t-3xl  pt-12 text-left flex justify-stretch flex-wrap lg:flex-nowrap gap-4">
+    <footer className="w-full pb-4 md:pb-16 bg-gradient-to-b from-[#e7d0c0] via-[#ebd1c1d3] to-[#f1dbccd3] relative rounded-t-3xl -mt-4 pt-12 text-left flex justify-stretch flex-wrap lg:flex-nowrap gap-4">
       <div className="lg:w-1/4 px-6">
         <h1 className="text-xl font-bold">About Us</h1>
         <p>
@@ -34,9 +34,9 @@ const Footer = () => {
           brand promoter outlet.
           <br />
           <span>
-          <Link
+            <Link
               className={`text-md underline hover:text-[#75917B]`}
-              to={'/about-us'}
+              to={"/about-us"}
               onClick={() => scrollToTop()}
             >
               Read More..
@@ -66,13 +66,18 @@ const Footer = () => {
             <span>
               <PhoneIcon fill="#f7941d" stroke="#e7d0c0" />
             </span>
-            +91 9765 371 831
+            9765371831 / 9890374806
           </p>
           <p className="flex gap-2">
             <span>
               <MailIcon fill="#f7941d" stroke="#e7d0c0" />
             </span>
-            calraidnutritionclinic@gmail.com
+            <a
+              href="mailto:info@calraidnutrition.com"
+              className=" hover:underline"
+            >
+              info@calraidnutrition.com
+            </a>
           </p>
         </div>
       </div>
@@ -107,9 +112,14 @@ const Footer = () => {
       <p className="md:absolute inset-x-0 bottom-4 text-center w-full mt-12">
         © 2019–2024 <span className="text-[#da8a2a]">CalRaid Nutrition</span>{" "}
         All Rights Reserved. Developed by
-        <span className="text-[#da8a2a]">{" "} 
-          <a href="https://gaurish.vercel.app/" target="_blank" className="drop-shadow underline">
-           Gaurish
+        <span className="text-[#da8a2a]">
+          {" "}
+          <a
+            href="https://gaurish.vercel.app/"
+            target="_blank"
+            className="drop-shadow underline"
+          >
+            Gaurish
           </a>
         </span>
       </p>

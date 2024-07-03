@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import testmonialsData from "../../data/hallOfFameData.json";
+import { useEffect, useState } from "react";
 
 const Testimonials = () => {
   const settings = {
@@ -33,9 +34,7 @@ const Testimonials = () => {
       <div className="text-center px-4 ">
         <h3 className="text-[20px] sm:text-[28px] md:text-[42px] playwrite-us-trad-regular flex justify-center gap-2 items-center text-white tracking-wide">
           CalRaid's Hall Of Fame
-          
-            <img src="/sparkles.svg" alt="" className="h-6 md:h-12" />
-          
+          <img src="/sparkles.svg" alt="" className="h-6 md:h-12" />
         </h3>
         <section className="slider-container overflow-hidden mt-12">
           <Slider {...settings}>
@@ -70,12 +69,23 @@ const TestimonialsCard = ({
   location: string;
   id: number;
 }) => {
+  const [togglePara, setTogglePara] = useState(false);
+
+  useEffect(() => {
+    if (togglePara) {
+      setTimeout(() => setTogglePara(false), 3000);
+    }
+  }, [togglePara]);
+
   return (
     <div
       key={id}
-      className="bg-white shadow-md  p-8  text-[#75917B] rounded-[100px] rounded-tr-none rounded-bl-none"
+      onClick={() => setTogglePara(true)}
+      className="bg-white shadow-md  p-8 cursor-pointer text-[#75917B] rounded-[100px] rounded-tr-none rounded-bl-none"
     >
-      <div className="text-[16px] line-clamp-4">{feedback}</div>
+      <div className={`text-[16px] ${!togglePara && "md:line-clamp-4"}`}>
+        {feedback}
+      </div>
       <div className="mt-4 mb-2 flex justify-center gap-2">
         {Array.from({ length: 5 }, (_, i) => i + 1).map((i) => (
           <img src="/star.svg" alt="" className="h-6" key={i} />
