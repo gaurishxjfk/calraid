@@ -17,59 +17,8 @@ import Plans from "./components/plans/Plans.tsx";
 import Testimonials from "./components/Testimonial/Testimonials.tsx";
 import ContactComponent from "./components/ContactUs.tsx";
 import BlogList from "./components/blogs/BlogList.tsx";
+import TestimonialsPage from "./components/Testimonial/TestimonialsPage.tsx";
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: (
-//       <Layout>
-//         <App />
-//       </Layout>
-//     ),
-//     errorElement: <ErrorPage />,
-//   },
-//   {
-//     path: "/about-us",
-//     element: (
-//       <Layout>
-//         <AboutUs />
-//       </Layout>
-//     ),
-//   },
-//   {
-//     path: "/services",
-//     element: (
-//       <Layout>
-//         <Services />
-//         <Testimonials />
-//       </Layout>
-//     ),
-//   },
-//   {
-//     path: "/plans",
-//     element: (
-//       <Layout>
-//         <Plans />
-//       </Layout>
-//     ),
-//   },
-//   {
-//     path: "/contact-us",
-//     element: (
-//       <Layout>
-//         <ContactComponent />
-//       </Layout>
-//     ),
-//   },
-//   {
-//     path: "/blogs",
-//     element: (
-//       <Layout>
-//         <BlogList />
-//       </Layout>
-//     ),
-//   },
-// ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -106,6 +55,14 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Layout>
               <Services />
               <Testimonials />
+            </Layout>
+          }
+        />
+        <Route
+          path="/testimonials"
+          element={
+            <Layout>
+              <TestimonialsPage />
             </Layout>
           }
         />

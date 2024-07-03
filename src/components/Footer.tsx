@@ -13,6 +13,7 @@ const menusItems = [
   "About Us",
   "Services",
   "Plans",
+  "Testimonials",
   "Blogs",
   "Contact Us",
 ];

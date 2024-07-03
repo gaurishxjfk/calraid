@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import testmonialsData from "../../data/hallOfFameData.json";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Testimonials = () => {
   const settings = {
@@ -39,13 +39,14 @@ const Testimonials = () => {
         <section className="slider-container overflow-hidden mt-12">
           <Slider {...settings}>
             {testmonialsData.clients.map((i) => (
-              <div key={i.id} className="px-4">
+              <div key={i.id} className="px-0 md:px-4">
                 <TestimonialsCard
                   feedback={i.feedback}
                   name={i.name}
                   profession={i.profession}
                   location={i.location}
                   id={i.id}
+                  fullPara={false}
                 />
               </div>
             ))}
@@ -56,34 +57,43 @@ const Testimonials = () => {
   );
 };
 
-const TestimonialsCard = ({
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+export const TestimonialsCard = ({
   feedback,
   name,
   profession,
   location,
   id,
+  fullPara,
 }: {
   feedback: string;
   name: string;
   profession: string | undefined;
   location: string;
   id: number;
+  fullPara: boolean;
 }) => {
-  const [togglePara, setTogglePara] = useState(false);
-
-  useEffect(() => {
-    if (togglePara) {
-      setTimeout(() => setTogglePara(false), 3000);
-    }
-  }, [togglePara]);
+  const navigate = useNavigate();
 
   return (
     <div
       key={id}
-      onClick={() => setTogglePara(true)}
-      className="bg-white shadow-md  p-8 cursor-pointer text-[#75917B] rounded-[100px] rounded-tr-none rounded-bl-none"
+      onClick={() => {
+        !fullPara && scrollToTop();
+        !fullPara && navigate("/testimonials");
+      }}
+      className={`bg-white shadow-md  p-8 cursor-pointer text-[#75917B] rounded-[100px] rounded-tr-none rounded-bl-none
+        ${fullPara && "sm:max-w-[22rem] mx-2"}`}
     >
-      <div className={`text-[16px] ${!togglePara && "md:line-clamp-4"}`}>
+      <div
+        className={`text-[14px] sm:text-[16px] ${!fullPara && "line-clamp-4"}`}
+      >
         {feedback}
       </div>
       <div className="mt-4 mb-2 flex justify-center gap-2">
@@ -92,8 +102,8 @@ const TestimonialsCard = ({
         ))}
       </div>
       <div className="w-full">
-        <h1 className="text-[20px] font-bold">{name}</h1>
-        <h3 className="text-[18px] ">
+        <h1 className="text-[16px] sm:text-[20px] font-bold">{name}</h1>
+        <h3 className="text-[14px] sm:text-[18px] ">
           {profession && profession?.length > 0 ? profession + "," : ""}{" "}
           {location}
         </h3>

@@ -9,7 +9,7 @@ const SubHero = () => {
         {menuArr.map((i) => (
           <Link
             className="text-lg encode-sans-semi-condensed-medium"
-            to={getPaths(i === "Testimonials" ? "Services" : i)}
+            to={getPaths(i)}
             key={i}
           >
             {i}
