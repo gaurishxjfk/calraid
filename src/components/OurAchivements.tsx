@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const achievementsArr = [
   { id: 1, title: "Healthier Lives", value: 1512 },
   { id: 2, title: "Assisted Sports Medals", value: 553 },
-  { id: 3, title: "Media and Nutrition Events", value: 126 },
+  { id: 3, title: "Media and Nutrition Events", value: 480 },
   { id: 4, title: "Empty calories raided", value: 103086 },
 ];
 
@@ -38,11 +38,11 @@ const OurAchivements = () => {
   return (
     <section className="bg-cover bg-center bg-backfeoung-image  w-full  p-4 py-8 md:py-12">
       <div className="text-center md:px-24 lg:px-40 md:mb-4 ">
-        <h3 className="text-2xl md:text-4xl playwrite-us-trad-regular  font-bold text-[#ffffff]">
-          Our <span className="playwrite-us-trad-regular">Achievements</span>
+        <h3 className="text-[46px] md:text-[66px] playball-regular tracking-wide text-[#ffffff]">
+          Our <span>Achievements</span>
         </h3>
         <p className=" mt-2 text-white text-[16px] encode-sans-semi-condensed-regular md:w-[70%] lg:w-[50%] mx-auto">
-          Celebrate CALRAID{"'"}S success milestones
+          Celebrate CalRaid{"'"}S success milestones
         </p>
       </div>
       <div

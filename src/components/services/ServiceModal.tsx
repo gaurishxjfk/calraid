@@ -32,7 +32,7 @@ const ServiceModal = ({
         <div className="mx-auto flex items-center justify-center bg-white w-14 h-14 rounded-full ">
           <img src={`/offer_${id}.png`} alt="CardEl" className="   mx-auto " />
         </div>
-        <div className="oleo-script-regular text-[#75917B] text-center text-2xl encode-sans-semi-condensed-medium tracking-wide">
+        <div className="playball-regular text-[#75917B] text-center text-2xl encode-sans-semi-condensed-medium tracking-wide">
           {title}
         </div>
         <div className="text-[18px] text-[#5C5C5C] text-center my-2">

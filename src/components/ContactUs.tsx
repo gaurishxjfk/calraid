@@ -8,6 +8,7 @@ import React, {
 } from "react";
 import PlansData from "../data/PlansData.json";
 import emailjs from "@emailjs/browser";
+import Captcha from "./Captcha";
 
 interface FormState {
   name: string;
@@ -311,6 +312,7 @@ const ContactComponent: React.FC = () => {
                 <p className="text-red-500 text-xs italic">{errors.captcha}</p>
               )}
             </div> */}
+            <Captcha />
               <div className="flex items-center justify-between">
                 <button
                 disabled={loading}

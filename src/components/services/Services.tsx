@@ -46,13 +46,13 @@ const Services = () => {
   }, [activeCardId]);
 
   return (
-    <section>
-      <div className="flex flex-col-reverse md:flex-row md:mx-8 lg:w-[65%] lg:mx-auto justify-around items-center mt-24">
-        <div className="w-[90%] lg:w-[45%] text-center md:text-left">
-          <h1 className="text-[46px] md:text-[66px] style-script-regular playwrite-us-trad-regular text-[#75917B] tracking-wide">
+    <section className="bg-[#ffe6d586] pb-12 pt-1">
+      <div className="flex  flex-col-reverse md:flex-row md:mx-8 lg:w-[65%] lg:mx-auto justify-around items-center mt-12">
+        <div className="w-[90%] md:w-[45%] overflow-hidden text-center md:text-left">
+          <h1 className="text-[46px] md:text-[66px] playball-regular tracking-wide text-[#75917B] ">
             Services
           </h1>
-          <p className="text-[20px] text-[#5C5C5C] tracking-wider">
+          <p className="text-[#5C5C5C] tracking-wider encode-sans-semi-condensed-regular">
             CalRaid hosts several services related to health and nutrition.
             Associations aren’t limited to individuals but available to groups
             as well for a wider outreach and awareness regarding health &
@@ -62,11 +62,11 @@ const Services = () => {
         <img
           src="./serviceImg3.png"
           alt="serviceImg"
-          className="md:w-[30%] rounded-md "
+          className=" rounded-md object-cover h-[50vh] w-[50vh]"
         />
       </div>
 
-      <div ref={myElementRef} className="flex relative flex-wrap w-[90%] lg:w-[75%] mx-auto justify-between  mb-24">
+      <div ref={myElementRef} className="flex relative flex-wrap w-[90%] lg:w-[75%] mx-auto justify-between">
         {activeCardId !== null && (
           <ServiceModal
             title={activeCardDtls?.title}
@@ -107,13 +107,13 @@ const ServicesCard = ({
   return (
     <>
       <div
-        className="mt-12 px-2 mx-auto rounded-[10px] servicecard relative hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] hover:shadow-[#75917b4f] bg-gradient-to-b from-[#ffe6d5] to-[#ffe6d5]  w-[18rem] shadowInner pb-8 hover:scale-110  transition-all ease-in-out duration-500 cursor-pointer"
+        className="mt-12 px-2 border-2 mx-auto rounded-[10px] servicecard relative hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] hover:shadow-[#75917b4f]  bg-white  w-[18rem] shadowInner pb-8 hover:scale-110  transition-all ease-in-out duration-500 cursor-pointer"
         onClick={() => {
           setActiveCard(id);
           handleClick(id);
         }}
       >
-        <div className="absolute -top-7 inset-x-0 mx-auto !z-40 bg-white w-16 h-16 rounded-full ">
+        <div className="absolute -top-7 inset-x-0 mx-auto !z-40 bg-[#ffe6d586] w-16 h-16 rounded-full ">
           <img
             src={`/offer_${id}.png`}
             alt="CardEl"
@@ -126,13 +126,13 @@ const ServicesCard = ({
           className="absolute top-0 inset-x-0 mx-auto !z-30"
         />
 
-        <div className="playwrite-us-trad-regular text-[#75917B] mt-14 text-center text-2xl tracking-wide">
+        <div className="playball-regular text-[#75917B] mt-14 text-center text-2xl tracking-wide">
           {title}
         </div>
-        <ul className="text-[18px] mt-4 flex flex-col gap-2 text-[#6D6D6D] encode-sans-semi-condensed-medium ">
+        <ul className="text-[16px] mt-4 px-2 md:px-4 flex flex-col gap-2 text-[#6D6D6D] encode-sans-semi-condensed-regular ">
           {list.map((item, j) => (
-            <li className=" text-center " key={j}>
-              {item}
+            <li className=" text-left" key={j}>
+              •{"  "}{item}
             </li>
           ))}
         </ul>

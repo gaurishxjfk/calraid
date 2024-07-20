@@ -17,7 +17,7 @@ const setpsArr = [
     id: 3,
     title: "Pick A Plan",
     icon: "pick_a_plan",
-    desc: "You pick a plan 🡪 Begin processing the payment for the same 🡪 Lock down an appointment slot 🡪 Transaction Confirmation",
+    desc: "You pick a plan &#8594 Begin processing the payment for the same &#8594 Lock down an appointment slot &#8594 Transaction Confirmation",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const HowItWorks = () => {
   return (
     <section className="bg-cover bg-center bg-backfeoung-image  w-full  p-4 py-8 md:py-12">
       <div className="text-center md:px-24 lg:px-40  ">
-        <h3 className="text-[28px] md:text-[42px] playwrite-us-trad-regular text-[#ffffff] tracking-wide">
+        <h3 className="text-[46px] md:text-[66px] playball-regular tracking-wide text-[#ffffff] tracking-wide">
           How It Works
         </h3>
         <p className=" mt-2 text-white encode-sans-semi-condensed-regular md:w-[70%]  text-[16px] mx-auto ">
@@ -76,9 +76,10 @@ const HowItWorks = () => {
         <h3 className="text-[28px] md:text-[32px] encode-sans-semi-condensed-bold text-[#75917B] tracking-wide">
           {setpsArr[activeStep - 1].title}
         </h3>
-        <p className=" mt-2 text-white  md:w-[70%]  text-[16px] mx-auto encode-sans-semi-condensed-light">
-          {setpsArr[activeStep - 1].desc}
-        </p>
+        <p
+          className=" mt-2 text-white  md:w-[70%]  text-[16px] mx-auto encode-sans-semi-condensed-light"
+          dangerouslySetInnerHTML={{ __html: setpsArr[activeStep - 1].desc }}
+        ></p>
       </div>
     </section>
   );

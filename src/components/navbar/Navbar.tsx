@@ -20,7 +20,7 @@ export function getPaths(path: string) {
 }
 
 
-  const scrollToTop = () => {
+  export const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",

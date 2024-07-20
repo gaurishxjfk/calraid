@@ -39,8 +39,8 @@ const Plans = () => {
         ref={myElementRef}
         className="h-[40vh] bg-cover bg-center bg-backfeoung-image text-center relative"
       >
-        <div className="h-[40vh] flex flex-col pt-16 bg-gradient-to-b from-sec to-sec">
-          <h3 className="text-[24px] md:text-[36px] font-bold text-white playwrite-us-trad-bold">
+        <div className="h-[40vh] flex flex-col pt-4 bg-gradient-to-b from-sec to-sec">
+          <h3 className="font-bold text-white text-[46px] md:text-[66px] playball-regular">
             Our Expertise
           </h3>
           <h3 className="text-[20px] text-white ">
@@ -49,7 +49,7 @@ const Plans = () => {
           </h3>
         </div>
       </div>
-      <div className="w-full md:w-[80%] mx-auto flex flex-wrap gap-2 justify-center -mt-24">
+      <div className="w-full md:w-[80%] mx-auto flex flex-wrap gap-2 justify-center -mt-16">
         {PlansData.sections.map((i) => (
           <div
             ref={divRef}
@@ -62,7 +62,7 @@ const Plans = () => {
             </div>
             <div className="text-center mt-8">
               <h5
-                className={`oleo-script-regular text-sec text-[24px] md:text-[28px]`}
+                className={`playball-bold tracking-wide text-sec text-[24px] md:text-[28px]`}
               >
                 {i.title}
               </h5>

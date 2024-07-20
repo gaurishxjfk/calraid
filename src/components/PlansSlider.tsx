@@ -55,7 +55,14 @@ const PlansSlider: React.FC<SliderProps> = () => {
   const nextSlide = () => {
     setTransition("transform 0.5s ease");
     setCurrentIndex((prevIndex) =>
-      prevIndex === PlansData.sections.length ? 1 : prevIndex + 1
+      prevIndex === PlansData.sections.length - 1 ? 1 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setTransition("transform 0.5s ease");
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 1 ? 1 : prevIndex - 1
     );
   };
 
@@ -68,11 +75,9 @@ const PlansSlider: React.FC<SliderProps> = () => {
   return (
     <section className="w-full md:w-[95%] lg:w-[80%] mx-auto -mt-24 overflow-x-hidden pt-8">
       {activePlanId && (
-        <PlanModal
-          id={activePlanId}
-          setActivePlanId={setActivePlanId}
-        />
+        <PlanModal id={activePlanId} setActivePlanId={setActivePlanId} />
       )}
+
       <div
         className="slider"
         style={{
@@ -107,6 +112,20 @@ const PlansSlider: React.FC<SliderProps> = () => {
           </div>
         ))}
       </div>
+      <div className="flex justify-center gap-6 mt-8 mb-8 z-40">
+        <button
+          className="mb-1 bg-[#75917B] px-3 py-1 text-white rounded-md hover:bg-[#49614e]"
+          onClick={prevSlide}
+        >
+          {"<"}
+        </button>
+        <button
+          className="mb-1 bg-[#75917B] px-3 py-1 text-white rounded-md hover:bg-[#49614e]"
+          onClick={nextSlide}
+        >
+          {">"}
+        </button>
+      </div>
     </section>
   );
 };
@@ -126,9 +145,9 @@ export const PlanCard = ({
 }) => {
   return (
     <div
-      className={`p-2  bg-white w-[17rem] mx-auto  drop-shadow-xl mb-20 rounded-md ${
+      className={`p-2  bg-white w-[17rem] mx-auto  drop-shadow-xl mb-4 rounded-md ${
         centerID === 10 &&
-        "scale-110 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] shadow-[#75917b7c]"
+        "scale-110 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] z-30 shadow-[#1a201c7c]"
       }`}
     >
       <div className="relative text-center flex justify-center rounded-md">
@@ -140,13 +159,14 @@ export const PlanCard = ({
         </div>
       </div>
       <div className="text-center mt-8">
-        <h5 className={`oleo-script-regular text-[#75917B] text-[24px] `}>
+        <h5 className={`playball-semibold text-[#75917B] text-[24px] ${
+            centerID === 10 && "text-[28px] playball-bold "
+          }  `}>
           {name}
         </h5>
         <p
           className={`italic text-gray-600 text-[16px]  line-clamp-4 ${
-            centerID === 10 &&
-            "text-[18px] not-italic scale-95"
+            centerID === 10 && "text-[18px]  scale-95"
           }  `}
         >
           {desc}

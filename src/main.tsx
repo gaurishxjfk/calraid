@@ -18,6 +18,8 @@ import Testimonials from "./components/Testimonial/Testimonials.tsx";
 import ContactComponent from "./components/ContactUs.tsx";
 import BlogList from "./components/blogs/BlogList.tsx";
 import TestimonialsPage from "./components/Testimonial/TestimonialsPage.tsx";
+import PlansSlider from "./components/PlansSlider.tsx";
+import WhatWeDo from "./components/WhatWeDo.tsx";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -45,7 +47,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           element={
             <Layout>
               <Services />
-              <Testimonials />
+              <WhatWeDo />
+              <PlansSlider />
             </Layout>
           }
         />
@@ -54,7 +57,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           element={
             <Layout>
               <Services />
-              <Testimonials />
             </Layout>
           }
         />
@@ -99,7 +101,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           }
         />
       </Routes>
-      {/* <RouterProvider router={router} /> */}
     </HashRouter>
   </React.StrictMode>
 );

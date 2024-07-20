@@ -8,10 +8,10 @@ const TestimonialsPage = () => {
     <div
       className="sm:h-[25vh] bg-cover bg-center bg-backfeoung-image text-center relative"
     >
-      <div className="sm:h-[25vh] flex flex-col  py-8 md:py-16">
-      <h3 className="text-[20px] sm:text-[28px] md:text-[42px] playwrite-us-trad-bold tracking-wider flex justify-center gap-2 items-center text-white">
+      <div className="sm:h-[25vh] flex flex-col pt-4">
+      <h3 className="text-[46px] md:text-[66px] playball-regular  tracking-wider flex justify-center gap-2 items-center text-white">
           CalRaid's Hall Of Fame
-          <img src="/sparkles.svg" alt="" className="h-6 md:h-12" />
+          <img src="/sparkles.svg" alt="" className="h-0 md:h-12" />
         </h3>
       </div>
     </div>

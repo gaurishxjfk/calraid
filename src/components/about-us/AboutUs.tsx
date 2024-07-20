@@ -8,9 +8,14 @@ const AboutUs = () => {
   const dietitionSecRef = useRef<HTMLDivElement>(null);
   const philosophySecRef = useRef<HTMLDivElement>(null);
 
-  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
+  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>, padding: number = 100) => {
     if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+      const top = sectionRef.current.getBoundingClientRect().top + window.scrollY - padding;
+  
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -45,7 +50,7 @@ const AboutUs = () => {
       </div>
       <div>
         <div className="bg-main py-3" ref={storySecRef}>
-          <h1 className="text-[24px] md:text-[34px] style-script-regular tracking-wide text-white">
+          <h1 className="text-[32px] md:text-[48px] playball-regular  tracking-wider  text-white">
             Our Story
           </h1>
         </div>
@@ -77,17 +82,17 @@ const AboutUs = () => {
 
       <div
         ref={philosophySecRef}
-        className="relative bg-white py-[5rem] h-[60vh] sm:h-[39vh] md:h-[20rem] mb-8"
+        className="relative bg-white py-[5rem] h-[60vh]  mb-2"
       >
-        <div className="w-full bg-white h-1 absolute -top-1 z-30"></div>
-        <div className="w-full bg-white h-1 absolute -bottom-1 z-30"></div>
+        <div className="w-full bg-main h-2 absolute -top-1 z-30"></div>
+        <div className="w-full bg-[#e7d0c0] h-4 absolute -bottom-2 z-30"></div>
         <div className="w-full bg-main h-[10rem] absolute inset-0 my-auto z-10"></div>
-        <div className="w-[90%] sm:w-[80%] md:w-[65%] px-2 md:px-12  bg-white z-20 absolute inset-0 mx-auto shadow-[3px_0px_5px_rgba(0,0,0,0.38),-3px_0px_5px_rgba(0,0,0,0.38)] flex flex-col justify-center">
-          <h1 className="text-[24px] md:text-[44px] style-script-regular tracking-wide text-main py-2 ">
+        <div className="w-[90%] sm:w-[80%] md:w-[65%] px-2 md:px-12  bg-[#e7d0c0] py-8 z-20 absolute inset-0 mx-auto shadow-[3px_0px_5px_rgba(0,0,0,0.38),-3px_0px_5px_rgba(0,0,0,0.38)] flex flex-col justify-center">
+          <h1 className="text-[46px] md:text-[48px] playball-regular  tracking-wider  text-main py-2 ">
             Our <span className="">Philosophy</span>
           </h1>
 
-          <p className="text-[15px] md:text-[16px] text-slate-600">
+          <p className="text-slate-600">
             Working with CalRaid is a commitment you make to yourself to better
             your health and food based knowledge. Our food coaching experts will
             not only guide you with the right nutrition practice but monitor and

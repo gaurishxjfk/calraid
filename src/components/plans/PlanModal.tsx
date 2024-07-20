@@ -48,10 +48,10 @@ const PlanModal = ({
         <div className="mt-6">
           <div className="flex flex-col md:flex-row gap-2 items-center">
             <div className="md:w-2/3">
-              <div className="encode-sans-semi-condensed-bold text-[#75917B] text-center md:text-left text-2xl encode-sans-semi-condensed-medium tracking-wide">
+              <div className="playball-bold tracking-wider text-[#75917B] text-center md:text-left text-2xl ">
                 {planDtls?.title}
               </div>
-              <div className="text-[18px] text-[#5C5C5C] text-center md:text-left my-2 ">
+              <div className="text-[#5C5C5C] text-center md:text-left my-2 encode-sans-semi-condensed-regular">
                 {planDtls?.description}
               </div>
             </div>
@@ -60,33 +60,33 @@ const PlanModal = ({
               <img
                 src={`/${planDtls?.id}.jpg`}
                 alt="plan image"
-                className={`rounded-lg h-[12rem] min-w-[12rem] mx-auto`}
+                className={`rounded-lg object-cover h-[10%] w-[70%] mx-auto`}
               />
             </div>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-2   mt-4">
           <div>
-            <div className="text-[16px] encode-sans-semi-condensed-bold sm:text-left pl-4 text-[#75917B]  text-xl  tracking-wide">
+            <div className="text-[16px] playball-regular sm:text-left pl-8 text-[#75917B]  text-xl  tracking-wide">
               Benefits
             </div>
             <ul className="text-[16px] mt-4 w-[90%] flex flex-col gap-2 text-[#6D6D6D] mx-auto ">
               {planDtls?.benefits !== undefined &&
                 planDtls.benefits.map((item, j) => (
-                  <li key={j} className="gap-2 text-left flex">
+                  <li key={j} className="gap-2 text-left flex encode-sans-semi-condensed-regular">
                     <span><Check stroke="#75917B"/></span> {item}
                   </li>
                 ))}
             </ul>
           </div>
           <div>
-            <div className=" text-[15px] encode-sans-semi-condensed-bold sm:text-left pl-4 text-[#75917B]  text-xl  tracking-wide">
+            <div className=" text-[15px] playball-regular sm:text-left pl-4 text-[#75917B]  text-xl  tracking-wide">
               Expectations
             </div>
             <ul className="text-[16px] mt-4 w-[90%] flex flex-col gap-2 text-[#6D6D6D] mx-auto ">
               {planDtls?.expectations !== undefined &&
                 planDtls.expectations.map((item, j) => (
-                  <li key={j} className="flex gap-2 text-left">
+                  <li key={j} className="flex gap-2 text-left encode-sans-semi-condensed-regular">
                     <span><Check stroke="#75917B"/></span> {item}
                   </li>
                 ))}

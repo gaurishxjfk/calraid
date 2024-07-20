@@ -33,16 +33,6 @@ const Footer = () => {
           CalRaid is a global healthcare clinic serving in the interest of
           nutrition and health management. It is not a diagnostic centre or a
           brand promoter outlet.
-          <br />
-          <span>
-            <Link
-              className={`text-md underline hover:text-[#75917B]`}
-              to={"/about-us"}
-              onClick={() => scrollToTop()}
-            >
-              Read More..
-            </Link>
-          </span>
         </p>
       </div>
       <div className="lg:w-1/4 px-6">

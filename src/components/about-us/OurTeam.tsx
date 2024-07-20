@@ -1,7 +1,7 @@
 const OurTeam = () => {
   return (
     <div className="bg-main py-3">
-      <h1 className="text-[24px] md:text-[44px]  style-script-regular tracking-wide text-white">
+      <h1 className="text-[46px] md:text-[66px] playball-regular  tracking-wider  text-white">
         Meet Our Team
       </h1>
       <div className="mt-8 md:mt-0 flex flex-col items-center lg:flex-row lg:justify-evenly lg:gap-12 w-full lg:px-12">

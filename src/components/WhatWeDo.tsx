@@ -2,7 +2,7 @@ const WhatWeDo = () => {
   return (
     <section className="w-full py-[3rem] pb-[8rem] bg-[#75917B]">
       <div className="text-center md:px-24 lg:px-40  ">
-        <h3 className="text-[28px] md:text-[42px] playwrite-us-trad-regular text-white tracking-wide">
+        <h3 className="text-[46px] md:text-[66px] playball-regular  text-white tracking-wide">
           What We Do
         </h3>
         <p className=" mt-2 text-white  md:w-[70%]  text-[16px] mx-auto encode-sans-semi-condensed-regular">

@@ -92,8 +92,42 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
   
-  
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700 */
+
+.dancing-script-bold {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playball-regular {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playball-semibold {
+  font-family: "Playball", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.playball-bold {
+  font-family: "Playball", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
   .shadowInner{
     box-shadow: inset 0 0 5px rgb(211, 211, 211);

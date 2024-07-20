@@ -1,4 +1,4 @@
-import Slider from "react-slick";
+import Slider, { CustomArrowProps } from "react-slick";
 import testmonialsData from "../../data/hallOfFameData.json";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +12,8 @@ const Testimonials = () => {
     cssEase: "linear",
     slidesToShow: 3,
     slidesToScroll: 1,
-
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     responsive: [
       {
         breakpoint: 1110,
@@ -30,13 +31,13 @@ const Testimonials = () => {
     ],
   };
   return (
-    <section className="w-full py-[3rem] pb-[8rem] bg-[#75917B]">
+    <section className="w-full pt-3 bg-[#75917B] pb-4">
       <div className="text-center px-4 ">
-        <h3 className="text-[20px] sm:text-[28px] md:text-[42px] playwrite-us-trad-regular flex justify-center gap-2 items-center text-white tracking-wide">
+        <h3 className="text-[46px] md:text-[66px] playball-regular flex justify-center gap-2 items-center text-white tracking-wide">
           CalRaid's Hall Of Fame
-          <img src="/sparkles.svg" alt="" className="h-6 md:h-12" />
+          <img src="/sparkles.svg" alt="" className="h-0 md:h-12" />
         </h3>
-        <section className="slider-container overflow-hidden mt-12">
+        <section className="slider-container h-[60vh] overflow-x-hidden mt-4">
           <Slider {...settings}>
             {testmonialsData.clients.map((i) => (
               <div key={i.id} className="px-0 md:px-4">
@@ -111,5 +112,23 @@ export const TestimonialsCard = ({
     </div>
   );
 };
+
+const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
+  <button
+  className="absolute z-40 -bottom-16  left-[4rem] md:left-[17rem] lg:left-[26rem] shadow-md h-12 w-12 flex justify-center items-center my-auto pb-1 bg-white text-main font-extrabold text-[29px] pr-1 rounded-full"
+  onClick={onClick}
+  >
+    {"<"}
+  </button>
+);
+
+const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
+  <button
+    className="absolute -bottom-16 right-[4rem] md:right-[17rem] lg:right-[26rem] shadow-md h-12 w-12 flex justify-center items-center my-auto bg-white text-main font-extrabold text-[29px] pb-1 pl-1 rounded-full"
+    onClick={onClick}
+  >
+    <p className="">{">"}</p>
+  </button>
+);
 
 export default Testimonials;

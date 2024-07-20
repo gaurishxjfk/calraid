@@ -35,7 +35,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Footer />
       {isScrolled && (
         <div
-          className="text-3xl font-black text-center bg-main p-2 fixed abs right-0 top-3/4 cursor-pointer"
+          className="text-3xl font-black text-center bg-main p-2 fixed z-50 abs right-0 top-3/4 cursor-pointer"
           onClick={scrollToTop}
         >
           <span>

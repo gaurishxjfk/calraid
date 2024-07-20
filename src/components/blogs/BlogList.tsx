@@ -34,10 +34,10 @@ const BlogList: React.FC = () => {
     <>
       <div
         ref={myElementRef}
-        className="h-[20vh] bg-cover bg-center bg-backfeoung-image_blog text-center relative"
+        className="h-[20vh] bg-cover bg-center bg-backfeoung-image text-center relative"
       >
-        <div className="h-[20vh] flex flex-col pt-16 bg-gradient-to-b from-[#75917bd3] to-[#75917b48]">
-          <h3 className="text-[24px] md:text-[36px] font-bold text-white playwrite-us-trad-bold">
+        <div className="h-[20vh] flex flex-col pt-4 bg-gradient-to-b from-[#75917bd3] to-[#75917b48]">
+          <h3 className="text-[46px] md:text-[48px] playball-regular  tracking-wider text-white">
             CalRaid Blogs
           </h3>
         </div>
