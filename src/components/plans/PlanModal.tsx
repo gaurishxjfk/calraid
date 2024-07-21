@@ -48,7 +48,7 @@ const PlanModal = ({
         <div className="mt-6">
           <div className="flex flex-col md:flex-row gap-2 items-center">
             <div className="md:w-2/3">
-              <div className="playball-bold tracking-wider text-[#75917B] text-center md:text-left text-2xl ">
+              <div className="amaranth-regular tracking-wide text-[#75917B] text-center md:text-left text-2xl ">
                 {planDtls?.title}
               </div>
               <div className="text-[#5C5C5C] text-center md:text-left my-2 encode-sans-semi-condensed-regular">
@@ -67,7 +67,7 @@ const PlanModal = ({
         </div>
         <div className="flex flex-col md:flex-row gap-2   mt-4">
           <div>
-            <div className="text-[16px] playball-regular sm:text-left pl-8 text-[#75917B]  text-xl  tracking-wide">
+            <div className="text-[16px] amaranth-regular sm:text-left pl-8 text-[#75917B]  text-xl  tracking-wide">
               Benefits
             </div>
             <ul className="text-[16px] mt-4 w-[90%] flex flex-col gap-2 text-[#6D6D6D] mx-auto ">
@@ -80,7 +80,7 @@ const PlanModal = ({
             </ul>
           </div>
           <div>
-            <div className=" text-[15px] playball-regular sm:text-left pl-4 text-[#75917B]  text-xl  tracking-wide">
+            <div className=" text-[15px] amaranth-regular sm:text-left pl-4 text-[#75917B]  text-xl  tracking-wide">
               Expectations
             </div>
             <ul className="text-[16px] mt-4 w-[90%] flex flex-col gap-2 text-[#6D6D6D] mx-auto ">

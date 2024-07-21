@@ -159,8 +159,8 @@ export const PlanCard = ({
         </div>
       </div>
       <div className="text-center mt-8">
-        <h5 className={`playball-semibold text-[#75917B] text-[24px] ${
-            centerID === 10 && "text-[28px] playball-bold "
+        <h5 className={`amaranth-regular text-[#75917B] text-[24px] ${
+            centerID === 10 && "text-[28px] a "
           }  `}>
           {name}
         </h5>

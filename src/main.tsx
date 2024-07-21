@@ -14,7 +14,6 @@ import Layout from "./Layout.tsx";
 import AboutUs from "./components/about-us/AboutUs.tsx";
 import Services from "./components/services/Services.tsx";
 import Plans from "./components/plans/Plans.tsx";
-import Testimonials from "./components/Testimonial/Testimonials.tsx";
 import ContactComponent from "./components/ContactUs.tsx";
 import BlogList from "./components/blogs/BlogList.tsx";
 import TestimonialsPage from "./components/Testimonial/TestimonialsPage.tsx";

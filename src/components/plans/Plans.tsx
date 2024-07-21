@@ -62,7 +62,7 @@ const Plans = () => {
             </div>
             <div className="text-center mt-8">
               <h5
-                className={`playball-bold tracking-wide text-sec text-[24px] md:text-[28px]`}
+                className={`amaranth-bold text-sec text-[24px] md:text-[28px]`}
               >
                 {i.title}
               </h5>

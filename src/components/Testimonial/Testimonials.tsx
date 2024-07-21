@@ -31,7 +31,7 @@ const Testimonials = () => {
     ],
   };
   return (
-    <section className="w-full pt-3 bg-[#75917B] pb-4">
+    <section className="w-full pt-3 bg-[#75917B] pb-8">
       <div className="text-center px-4 ">
         <h3 className="text-[46px] md:text-[66px] playball-regular flex justify-center gap-2 items-center text-white tracking-wide">
           CalRaid's Hall Of Fame
@@ -115,7 +115,7 @@ export const TestimonialsCard = ({
 
 const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
   <button
-  className="absolute z-40 -bottom-16  left-[4rem] md:left-[17rem] lg:left-[26rem] shadow-md h-12 w-12 flex justify-center items-center my-auto pb-1 bg-white text-main font-extrabold text-[29px] pr-1 rounded-full"
+  className="absolute z-40 -bottom-16  left-[4rem] md:left-[17rem] lg:left-[28rem] shadow-md h-12 w-12 flex justify-center items-center my-auto pb-1 bg-white text-main font-extrabold text-[29px] pr-1 rounded-full"
   onClick={onClick}
   >
     {"<"}
@@ -124,7 +124,7 @@ const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
 
 const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
   <button
-    className="absolute -bottom-16 right-[4rem] md:right-[17rem] lg:right-[26rem] shadow-md h-12 w-12 flex justify-center items-center my-auto bg-white text-main font-extrabold text-[29px] pb-1 pl-1 rounded-full"
+    className="absolute -bottom-16 right-[4rem] md:right-[17rem] lg:right-[28rem] shadow-md h-12 w-12 flex justify-center items-center my-auto bg-white text-main font-extrabold text-[29px] pb-1 pl-1 rounded-full"
     onClick={onClick}
   >
     <p className="">{">"}</p>

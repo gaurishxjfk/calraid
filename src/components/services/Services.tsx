@@ -46,7 +46,7 @@ const Services = () => {
   }, [activeCardId]);
 
   return (
-    <section className="bg-[#ffe6d586] pb-12 pt-1">
+    <section className="bg-[#ffe6d586] pb-12 pt-1 mt-4 shadow-md">
       <div className="flex  flex-col-reverse md:flex-row md:mx-8 lg:w-[65%] lg:mx-auto justify-around items-center mt-12">
         <div className="w-[90%] md:w-[45%] overflow-hidden text-center md:text-left">
           <h1 className="text-[46px] md:text-[66px] playball-regular tracking-wide text-[#75917B] ">
@@ -60,9 +60,9 @@ const Services = () => {
           </p>
         </div>
         <img
-          src="./serviceImg3.png"
+          src="./serviceHeroImg.jpg"
           alt="serviceImg"
-          className=" rounded-md object-cover h-[50vh] w-[50vh]"
+          className=" rounded-md object-cover h-[50vh] w-[50vh] object-left"
         />
       </div>
 
@@ -126,7 +126,7 @@ const ServicesCard = ({
           className="absolute top-0 inset-x-0 mx-auto !z-30"
         />
 
-        <div className="playball-regular text-[#75917B] mt-14 text-center text-2xl tracking-wide">
+        <div className="amaranth-regular text-[#75917B] mt-14 text-center text-2xl tracking-wide">
           {title}
         </div>
         <ul className="text-[16px] mt-4 px-2 md:px-4 flex flex-col gap-2 text-[#6D6D6D] encode-sans-semi-condensed-regular ">

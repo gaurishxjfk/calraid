@@ -10,6 +10,16 @@ import PlansData from "../data/PlansData.json";
 import emailjs from "@emailjs/browser";
 import Captcha from "./Captcha";
 
+const generateCaptcha = (): string => {
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let captcha = "";
+  for (let i = 0; i < 6; i++) {
+    captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return captcha;
+};
+
 interface FormState {
   name: string;
   email: string;
@@ -24,6 +34,7 @@ interface FormErrors {
   mobile?: string;
   service?: string;
   message?: string;
+  captcha?: string;
 }
 
 const initialFormState: FormState = {
@@ -41,7 +52,17 @@ const ContactComponent: React.FC = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isVisible, setIsVisible] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isVerified, setIsVerified] = useState<boolean>(false);
+  const [changeCaptcha, setChangeCaptcha] = useState<boolean>(false);
+  const [captchaError, setCaptchaError] = useState<string>("");
+  const [captcha, setCaptcha] = useState<string[]>(generateCaptcha().split(""));
+
   const form = useRef<HTMLFormElement | null>(null);
+
+  useEffect(() => {
+    changeCaptcha && setCaptcha(generateCaptcha().split(""));
+    setChangeCaptcha(false)
+  }, [changeCaptcha]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -83,17 +104,20 @@ const ContactComponent: React.FC = () => {
     if (!formState.message) {
       newErrors.message = "Message is required";
     }
-    // if (!formState.captcha) {
-    //   newErrors.captcha = "CAPTCHA is required";
-    // }
+    if (!isVerified) {
+      newErrors.captcha = "CAPTCHA is required";
+      setCaptchaError("CAPTCHA is required");
+    }
     setErrors(newErrors);
     return newErrors;
   };
 
   const handleSubmit = (e: FormEvent) => {
+    console.log("yess");
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
     const newErrors = validateForm();
+    console.log("yess2");
     if (Object.keys(newErrors).length === 0 && form.current) {
       emailjs
         .sendForm("service_j4zr49p", "template_1qoolna", form.current, {
@@ -103,17 +127,18 @@ const ContactComponent: React.FC = () => {
           () => {
             console.log("SUCCESS!");
             setIsVisible(true);
-            setFormState(initialFormState)
-            setLoading(false)
+            setFormState(initialFormState);
+            setLoading(false);
           },
           (error) => {
-            console.log("FAILED...", error);            
-            setLoading(false)
+            console.log("FAILED...", error);
+            setLoading(false);
           }
-        );      
+        );
     } else {
-      setErrors(newErrors);      
-      setLoading(false)
+      console.log("yess222", newErrors);
+      setErrors(newErrors);
+      setLoading(false);
     }
   };
 
@@ -291,31 +316,30 @@ const ContactComponent: React.FC = () => {
                   </p>
                 )}
               </div>
-              {/* <div className="mb-6">
-              <label
+              <div className="mb-6">
+                {/* <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="captcha"
               >
                 CAPTCHA
-              </label>
-              <input
-                className={`shadow appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500 ${
-                  errors.captcha ? "border-red-500" : ""
-                }`}
-                id="captcha"
-                type="text"
-                placeholder="Enter CAPTCHA"
-                value={formState.captcha}
-                onChange={handleChange}
-              />
-              {errors.captcha && (
-                <p className="text-red-500 text-xs italic">{errors.captcha}</p>
-              )}
-            </div> */}
-            <Captcha />
+              </label> */}
+                {!isVerified && (
+                  <Captcha
+                    captcha={captcha}
+                    setIsVerified={setIsVerified}
+                    setCaptchaError={setCaptchaError}
+                    setChangeCaptcha={setChangeCaptcha}
+                    isVerified={isVerified}
+                  />
+                )}
+                {captchaError && (
+                  <p className="text-red-500 text-xs italic">{captchaError}</p>
+                )}
+              </div>
+
               <div className="flex items-center justify-between">
                 <button
-                disabled={loading}
+                  disabled={loading}
                   className="bg-gradient-to-r w-full from-[#669669] to-main text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105"
                   type="submit"
                 >
